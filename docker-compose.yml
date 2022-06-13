@@ -25,6 +25,8 @@ services:
       - elk
 
   elasticsearch:
+    labels:
+      shipyard.route: '/'
     build:
       context: elasticsearch/
       args:
